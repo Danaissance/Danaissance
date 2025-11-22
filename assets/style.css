@@ -196,3 +196,38 @@ body.thai-mode .content-en {
 body.thai-mode .content-th {
   display: block;
 }
+/* --- Contact Info Styles --- */
+
+.contact-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 8px;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.contact-item {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item span {
+    font-size: 1.3rem;
+}
+
+.contact-item a {
+    color: #222;
+    text-decoration: none;
+    border-bottom: 1px dotted #999;
+    transition: color 0.2s;
+}
+
+.contact-item a:hover {
+    color: #0056b3;
+    border-bottom-color: #0056b3;
+}
