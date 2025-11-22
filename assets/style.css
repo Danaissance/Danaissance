@@ -1,0 +1,58 @@
+<!-- assets/style.css -->
+}
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+border-bottom: 1px solid #eee;
+}
+.logo {
+font-size: 20px;
+font-weight: bold;
+letter-spacing: 1px;
+}
+nav a {
+margin-left: 20px;
+text-decoration: none;
+color: #333;
+}
+.hero {
+text-align: center;
+padding: 100px 20px;
+}
+.btn {
+display: inline-block;
+padding: 10px 20px;
+border: 1px solid #000;
+margin-top: 20px;
+text-decoration: none;
+color: #000;
+}
+.services {
+padding: 50px 20px;
+max-width: 900px;
+margin: auto;
+}
+.service-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+.service-card {
+border: 1px solid #eee;
+padding: 20px;
+border-radius: 4px;
+}
+.about-section, .blog-list, .post-content {
+max-width: 700px;
+margin: auto;
+padding: 40px 20px;
+}
+footer {
+text-align: center;
+padding: 20px;
+border-top: 1px solid #eee;
+margin-top: 40px;
+}
+</style>
