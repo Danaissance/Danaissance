@@ -1,48 +1,61 @@
-<!-- assets/style.css -->
-border: 1px solid #000;
-margin-top: 20px;
-text-decoration: none;
-color: #000;
-font-size: 14px;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background: #fff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #000;
 }
 .services {
-padding: 50px 20px;
-max-width: 1000px;
-margin: auto;
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
 }
 .service-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 .service-card {
-border: 1px solid #eee;
-padding: 20px;
-border-radius: 6px;
-background: #fafafa;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 4px;
 }
 .about-section, .blog-list, .post-content {
-max-width: 800px;
-margin: auto;
-padding: 40px 20px;
-line-height: 1.6;
-}
-.blog-list h2 {
-font-size: 1.4rem;
-}
-/* Responsive Text */
-@media (max-width: 600px) {
-.hero h1 {
-font-size: 1.8rem;
-}
-.services h2 {
-text-align: center;
-}
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
 }
 footer {
-text-align: center;
-padding: 20px;
-border-top: 1px solid #eee;
-margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
 }
-</style>
