@@ -59,3 +59,107 @@ footer {
   border-top: 1px solid #eee;
   margin-top: 40px;
 }
+/* --- ส่วนที่เพิ่มใหม่สำหรับหน้า Services --- */
+
+/* Hero แบบสั้นสำหรับหน้าย่อย */
+.small-hero {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* สีพื้นหลังให้อ่อนลงนิดหน่อย */
+    border-bottom: 1px solid #eee;
+}
+.small-hero h1 {
+    margin-bottom: 10px;
+}
+
+/* จัดการ Nav ให้รู้ว่าอยู่หน้าไหน */
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #222;
+}
+
+/* Layout ของหน้า Consulting Details */
+.consulting-details-section {
+    max-width: 1000px; /* กว้างกว่าหน้า blog นิดหน่อย */
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.consulting-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+.consulting-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Grid สำหรับรายละเอียดบริการ */
+.detailed-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px;
+}
+
+.detail-card {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* เอฟเฟกต์ตอนเอาเมาส์ไปชี้ */
+.detail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-color: #ddd;
+}
+
+.icon-placeholder {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.detail-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.detail-card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.detail-card ul {
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 20px;
+    color: #555;
+}
+.detail-card ul li {
+    margin-bottom: 10px;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f4f4f4; /* สีเทาอ่อนตัดกับพื้นหลังขาว */
+    margin-top: 40px;
+}
+.cta-section h2 {
+    margin-top: 0;
+}
+.btn-dark {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #222;
+    transition: background-color 0.2s;
+}
+.btn-dark:hover {
+    background-color: #444;
+    border-color: #444;
+}
