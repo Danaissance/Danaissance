@@ -163,3 +163,36 @@ nav a.active {
     background-color: #444;
     border-color: #444;
 }
+/* --- Language Toggle Styles --- */
+
+/* สไตล์ปุ่มเปลี่ยนภาษา */
+#lang-toggle {
+  cursor: pointer;
+  padding: 5px 10px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-left: 15px;
+}
+#lang-toggle:hover {
+  background: #ddd;
+}
+
+/* กฎการแสดงผลภาษา */
+
+/* ปกติ: ซ่อนไทย แสดงอังกฤษ */
+.content-th {
+  display: none;
+}
+.content-en {
+  display: block; /* หรือ inline ตามบริบท */
+}
+
+/* เมื่อ Body มีคลาส 'thai-mode': ซ่อนอังกฤษ แสดงไทย */
+body.thai-mode .content-en {
+  display: none;
+}
+body.thai-mode .content-th {
+  display: block;
+}
