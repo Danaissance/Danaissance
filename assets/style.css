@@ -17,11 +17,12 @@ header {
   padding: 24px 5%;
   border-bottom: 1px solid #eaeaea;
 }
-
-.logo {
+.logo, .logo a {
   font-size: 24px;
   font-weight: 800;
   letter-spacing: -0.5px;
+  color: #E02424; /* รหัสสีแดงโทน WhatMatters */
+  text-decoration: none;
 }
 
 nav a {
