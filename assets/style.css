@@ -1,37 +1,81 @@
+/* นำเข้า Font 'Inter' จาก Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: #222;
+  font-family: 'Inter', sans-serif;
+  color: #111; /* ตัวหนังสือดำสนิท */
   background: #fff;
+  line-height: 1.6;
 }
+
+/* Header แบบมินิมอล */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  border-bottom: 1px solid #eee;
+  padding: 24px 5%;
+  border-bottom: 1px solid #eaeaea;
 }
+
 .logo {
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
 }
+
 nav a {
-  margin-left: 20px;
+  margin-left: 32px;
   text-decoration: none;
-  color: #333;
+  color: #555;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.2s;
 }
+
+nav a:hover, nav a.active {
+  color: #111;
+}
+
+/* Hero Section สไตล์จัดชิดซ้าย ทรงพลัง */
 .hero {
-  text-align: center;
-  padding: 100px 20px;
+  text-align: left; 
+  padding: 120px 5%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
+
+.hero h1 {
+  font-size: 4.5rem; /* หัวข้อใหญ่กระแทกตา */
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #555;
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+/* ปุ่มสไตล์ Solid ดุดัน */
 .btn {
   display: inline-block;
-  padding: 10px 20px;
-  border: 1px solid #000;
-  margin-top: 20px;
+  padding: 16px 32px;
+  background: #111;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
   text-decoration: none;
-  color: #000;
+  border-radius: 4px;
+  transition: background 0.2s;
+  border: none;
+}
+
+.btn:hover {
+  background: #444;
 }
 .services {
   padding: 50px 20px;
