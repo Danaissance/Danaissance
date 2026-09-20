@@ -73,7 +73,6 @@ nav a:hover, nav a.active {
   transition: background 0.2s;
   border: none;
 }
-
 .btn:hover {
   background: #444;
 }
